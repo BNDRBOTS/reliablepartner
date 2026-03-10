@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
-<title>BNDR LLC — Phoenix Brand Design + Web Agency</title>
+<title>BNDR LLC — Phoenix Web, Branding + Creative Work</title>
 
-<meta name="description" content="BNDR LLC — Phoenix web, branding, and creative work. One-Page Launch, Three-Page Site, and 1-Month Unlimited. Direct access.">
-<meta name="keywords" content="web design, branding, Phoenix agency, BNDR LLC, one-page website, three-page website, monthly creative partner, digital agency Arizona">
+<meta name="description" content="BNDR LLC — Phoenix web, branding, and creative work. Single Landing Page, Three-Page Websites, and 30-Day BNDR Unlimited™. Direct access.">
+<meta name="keywords" content="web design, sales consulting, branding, Phoenix agency, BNDR LLC, one-page website, landing page, three-page website, monthly creative partner, digital agency Arizona">
 <meta name="robots" content="index, follow">
 <meta name="author" content="BNDR LLC">
 <meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="canonical" href="https://bndrllc.com">
+<link rel="icon" type="image/jpeg" href="https://www.dropbox.com/scl/fi/0687ybysrxch4kqtrw6ee/BNDR_red_palette.jpg?rlkey=t5atgq5rmj6w5hhh9mspew2cn&st=pjyn1u3o&raw=1">
+<link rel="shortcut icon" type="image/jpeg" href="https://www.dropbox.com/scl/fi/0687ybysrxch4kqtrw6ee/BNDR_red_palette.jpg?rlkey=t5atgq5rmj6w5hhh9mspew2cn&st=pjyn1u3o&raw=1">
+<link rel="apple-touch-icon" href="https://www.dropbox.com/scl/fi/0687ybysrxch4kqtrw6ee/BNDR_red_palette.jpg?rlkey=t5atgq5rmj6w5hhh9mspew2cn&st=pjyn1u3o&raw=1">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bndrllc.com">
 <meta property="og:title" content="BNDR LLC — Phoenix Web + Brand Partner">
-<meta property="og:description" content="One-Page Launch, Three-Page Site, and 1-Month Unlimited. Direct access. Phoenix AZ.">
+<meta property="og:description" content="One-Page Landing Pages, Three-Page Custom Sites, and 30-Day Unlimited. Direct access. Phoenix AZ.">
 <meta property="og:image" content="https://www.dropbox.com/scl/fi/t1zxkjm4lq4sfveedn119/bndr26.png?rlkey=mc6decn5olct67crw7zmqp89g&st=f4ug8u31&raw=1&v=2">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BNDR LLC">
@@ -28,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "BNDR LLC",
-  "description": "Phoenix web, branding, and creative work — one-page launches, three-page sites, and 1-Month Unlimited",
+  "description": "Phoenix web, branding, and custom creative work — one-page landing pages, three-page websites, and 30-Day BNDR Unlimited",
   "url": "https://bndrllc.com",
   "telephone": "+17179197731",
   "email": "bndr.labs@gmail.com",
@@ -202,7 +205,7 @@ html:not([data-theme="light"]) .hud { mix-blend-mode: difference; }
     cursor:pointer; display:flex; align-items:center;
 }
 .hud-top-left img {
-    height:38px; display:block; pointer-events:none;
+    height:80px; display:block; pointer-events:none;
     transition: filter .4s ease;
 }
 .hud-top-left img[data-broken] { display:none; }
@@ -509,8 +512,8 @@ html[data-theme="light"] .touch-submit:hover { background: var(--neon-cyan); col
     overflow:hidden; text-transform:uppercase;
 }
 #contact-btn:hover .cbtn-text { max-width:80px; opacity:1; }
-html[data-theme="light"] #contact-btn { background: rgba(230,227,220,0.9); border-color: rgba(0,105,112,0.38); }
-html[data-theme="light"] @keyframes cPulse {
+html[data-theme="light"] #contact-btn { background: rgba(230,227,220,0.9); border-color: rgba(0,105,112,0.38); animation-name: cPulseLight; }
+@keyframes cPulseLight {
     0%,100% { box-shadow: 0 0 18px rgba(0,105,112,0.14), 0 0 0 0 rgba(0,105,112,0); }
     50%      { box-shadow: 0 0 28px rgba(0,105,112,0.28), 0 0 0 5px rgba(0,105,112,0.04); }
 }
@@ -736,13 +739,9 @@ html[data-theme="light"] .social-link { border-color: rgba(0,0,0,0.12); backgrou
 #sec-work, #sec-apps, #sec-pricing { min-height:auto; }
 #sec-pricing, #sec-connect { background: var(--void); }
 
-/* ── LIGHT MODE WHITE TEXT OVERRIDES (LITERAL COMPLIANCE) ── */
-html[data-theme="light"] #sec-hero p,
-html[data-theme="light"] #sec-partnership p,
-html[data-theme="light"] #sec-background p,
-html[data-theme="light"] #sec-how-it-works p,
+/* ── LIGHT MODE TEXT — token-based, no hardcoded white on light bg ── */
 html[data-theme="light"] .sec-title span {
-    color: #FFFFFF !important;
+    color: var(--plasma);
 }
 
 html[data-theme="light"] #sec-hero .kinetic-text,
@@ -786,10 +785,8 @@ html[data-theme="light"] .fw-bold {
          onclick="window.scrollTo({top:0,behavior:'smooth'})" role="link" tabindex="0"
          aria-label="BNDR LLC Home">
         <img
-            src="https://www.dropbox.com/scl/fi/t1zxkjm4lq4sfveedn119/bndr26.png?rlkey=mc6decn5olct67crw7zmqp89g&st=f4ug8u31&raw=1&v=2"
+            src="https://www.dropbox.com/scl/fi/arq5ahrf3m1m9060bes5h/BNDR_Upscaled_26_Blk_Wht-Background-Removed.png?rlkey=3iwsya8nh4igg9ql4acm0xbe2&st=jbxhvck4&raw=1"
             alt="BNDR LLC"
-            referrerpolicy="no-referrer"
-            crossorigin="anonymous"
             onerror="this.setAttribute('data-broken','1');this.insertAdjacentHTML('afterend','<span style=\'font-family:var(--font-display);font-size:22px;font-weight:900;letter-spacing:-0.04em;color:var(--bone)\'>BNDR</span>')"
         >
     </div>
@@ -894,7 +891,7 @@ html[data-theme="light"] .fw-bold {
             </div>
             <div class="touch-field">
                 <label for="t-msg">What can we work on?</label>
-                <textarea id="t-msg" name="message" placeholder="One-page, three-pages, more, or monthly? — Let me know, we'll figure it out." required></textarea>
+                <textarea id="t-msg" name="message" placeholder="One-page, three-pages, more/monthly? — Let me know, we'll figure it out." required></textarea>
             </div>
             <div class="touch-actions">
                 <button type="submit" class="touch-submit">Send It →</button>
@@ -914,16 +911,16 @@ html[data-theme="light"] .fw-bold {
             <h1 class="kinetic-text split-text">UNLIMITED</h1>
             <div class="glass-panel" style="margin-top:2.5rem; max-width: 720px;">
                 <p>
-                    I offer One-Page Launch, Three-Page Site, and 1-Month Unlimited.
+                    I offer One-Page Landing Sites, Three-Page Websites, and 30-Day BNDR Unlimited™, all with intentionally limited client capacity.
                 </p>
                 <p>
-                    1-Month Unlimited is limited to 3 active clients at a time, a structured and limited total clientele intake is used overall so my client load always stays managable. Every one of my clients gets the full attention and time they, and their business deserve.
+                    30-Day Unlimited is capped at 3 active clients at a time. I keep my client load intentionally limited so every client gets the full attention their business deserves.
                 </p>
                 <p>
                     Websites, Refinements on Existing Content, AI agents, Integrations, Branding, Data Analysis, Bottleneck Breakouts, Marketing Materials, Services, Graphic design, Dashboards, Web applications, and more.
                 </p>
                 <p style="font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.05em;">
-                    Email: <a href="mailto:bndr.labs@gmail.com">bndr.labs@gmail.com</a><br>
+                    Email: <a href="/cdn-cgi/l/email-protection#b5d7dbd1c79bd9d4d7c6f5d2d8d4dcd99bd6dad8"><span class="__cf_email__" data-cfemail="dab8b4bea8f4b6bbb8a99abdb7bbb3b6f4b9b5b7">[email&#160;protected]</span></a><br>
                     Phone: <a href="tel:7179197731">717-919-7731</a>
                 </p>
             </div>
@@ -937,7 +934,7 @@ html[data-theme="light"] .fw-bold {
             <h2 class="kinetic-text split-text">PARTNERSHIP</h2>
             <div class="glass-panel" style="margin-top:2.5rem; max-width: 800px;">
                 <p>I take this work seriously and build with both your business and your clients in mind. I’m not your typical “get-it-and-go” service, though I can be. I focus on quality and alignment. I put in the work required to make sure it suits your business and your clients.</p>
-                <p>Whether it’s a one-page launch, a three-page site, or a full month of work, I focus on getting it done right. We set the goals together, I focus on getting them done, and we adjust if or as needed. I’m here to share what I know works, what I know doesn’t, and use the right tools to find problems before they get expensive. I believe in building things right from the start. Mistakes cost money. I respect that.</p>
+                <p>Whether it’s a Solo Lander™, a Triple Custom™, or a full month of BNDR Unlimited™, I focus on getting it done right. We set the goals together, I focus on getting them done, and we adjust if or as needed. I’m here to share what I know works, what I know doesn’t, and use the right tools to find problems before they get expensive. I believe in building things right from the start. Mistakes cost money. I respect that.</p>
             </div>
         </div>
     </section>
@@ -972,10 +969,10 @@ html[data-theme="light"] .fw-bold {
             <h2 class="kinetic-text split-text">HOW IT</h2>
             <h2 class="kinetic-text split-text">WORKS</h2>
             <div class="glass-panel" style="margin-top:2.5rem; max-width: 900px;">
-                <p><span class="fw-bold">1. Pick the fit</span><br>Choose One-Page Launch, Three-Page Site, or 1-Month Unlimited.</p>
+                <p><span class="fw-bold">1. Pick the fit</span><br>Choose Solo Lander™, Triple Custom, or the 30-Day BNDR Unlimited™.</p>
                 <p><span class="fw-bold">2. Send what matters</span><br>Email-first. Send your info, services, links, notes, rough drafts, images or logo, and contact path.</p>
                 <p><span class="fw-bold">3. Payment + start</span><br>All payments are taken upfront. Work begins the same day payment clears.</p>
-                <p><span class="fw-bold">4. Delivery + revisions</span><br>Every job gets a clear delivery window. Larger items ship in checkpoints until complete. One-Page Launch includes 1 light revision. Three-Page Site includes 2 light revisions. 1-Month Unlimited includes unlimited revisions during the active month.</p>
+                <p><span class="fw-bold">4. Delivery + revisions</span><br>Every job gets a clear delivery window. Larger items ship in checkpoints until complete. Solo Lander™ includes 1 light revision. Triple Custom™ includes 2 light revisions. 30 BNDR Unlimited™ includes unlimited revisions during the active month.</p>
                 <p><span class="fw-bold">5. Communication</span><br>Call, Email, Text, whatever is easiest for you. One point person approves final decisions.</p>
             </div>
             </div>
@@ -1023,21 +1020,21 @@ html[data-theme="light"] .fw-bold {
             <div class="pricing-grid" style="margin-top:2.5rem;">
                 
                 <div class="pricing-block glass-panel">
-                    <div class="pricing-eyebrow">One-Page Launch</div>
+                    <div class="pricing-eyebrow">Solo Lander™</div>
                     <div class="pricing-amount">$750</div>
                     <div class="pricing-divider"></div>
                     <p>Custom one-page site with your info, services, images or logo, contact path, mobile optimization, and publish. Includes 1 light revision.</p>
                 </div>
 
                 <div class="pricing-block glass-panel">
-                    <div class="pricing-eyebrow">Three-Page Site</div>
+                    <div class="pricing-eyebrow">Triple Custom™</div>
                     <div class="pricing-amount">$1,500</div>
                     <div class="pricing-divider"></div>
                     <p>Custom three-page site with more room for your services, visuals, and contact flow, with mobile optimization and publish. Includes 2 light revisions.</p>
                 </div>
 
                 <div class="pricing-block glass-panel">
-                    <div class="pricing-eyebrow">1-Month Unlimited</div>
+                    <div class="pricing-eyebrow">30-Day BNDR Unlimited™</div>
                     <div class="pricing-amount">$3,500</div>
                     <div class="pricing-divider"></div>
                     <p>30 calendar days of direct work for one business. Unlimited revisions, custom projects, dashboards, marketing materials, ongoing creative and web work, and consulting during the active month. Only 3 slots per month max.</p>
@@ -1053,10 +1050,10 @@ html[data-theme="light"] .fw-bold {
                     <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> All payments are taken upfront. Work begins the same day payment clears.</li>
                     <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Additional work beyond the selected package is billed at $75/hr.</li>
                     <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Light Revision = one consolidated round submitted within 7 calendar days of delivery.</li>
-                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> 1-Month Unlimited is month-to-month. Cancel anytime. It includes a 1-week 75% money-back guarantee.</li>
+                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> 30-Day BNDR Unlimited™ is month-to-month. Cancel anytime. It includes a 1-week 75% money-back guarantee.</li>
                     <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> All other work is non-refundable.</li>
-                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Hosting is included with 1-Month Unlimited while active, upon request.</li>
-                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Hosting is available separately for One-Page Launch and Three-Page Site at $60/mo per site.</li>
+                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Hosting is included with 30-Day BNDR Unlimited™ while active, upon request.</li>
+                    <li style="display: flex; gap: 12px;"><span style="color: var(--neon-cyan);">—</span> Hosting is available separately for Solo Lander™ and Triple Custom™ at $60/mo per site.</li>
                 </ul>
             </div>
         </div>
@@ -1069,11 +1066,11 @@ html[data-theme="light"] .fw-bold {
             <div class="glass-panel" style="margin-top: 2.5rem; max-width: 1000px;">
                 <div class="faq-item">
                     <div class="faq-q">What’s the difference between the services?</div>
-                    <div class="faq-a">One-Page Launch is a custom one-page site with 1 light revision. Three-Page Site is a custom three-page site with 2 light revisions. 1-Month Unlimited is 30 calendar days of direct work for one business.</div>
+                    <div class="faq-a">Solo Lander™ is a custom one-page site with 1 light revision. Triple Custom™ is a custom three-page site with 2 light revisions. 30-Day BNDR Unlimited™ is 30 calendar days of direct work for one business.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">What can be requested?</div>
-                    <div class="faq-a">1-Month Unlimited includes unlimited requests including: Websites, Refinements on Existing Content, AI agents, Integrations, Branding, Data Analysis, Bottleneck Breakouts, Marketing Materials, Services, Graphic design, Dashboards, Web applications, and more.</div>
+                    <div class="faq-a">30-Day Unlimited includes unlimited requests including: Websites, Refinements on Existing Content, AI agents, Integrations, Branding, Data Analysis, Bottleneck Breakouts, Marketing Materials, Services, Graphic design, Dashboards, Web applications, and more.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">How fast is delivery?</div>
@@ -1081,11 +1078,11 @@ html[data-theme="light"] .fw-bold {
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">How do requests work?</div>
-                    <div class="faq-a">For 1-Month Unlimited, unlimited requests can be queued. One request is active at a time, if it’s something smaller, at times I may have the room to double-up, but not always.</div>
+                    <div class="faq-a">For 30-Day BNDR Unlimited™, unlimited requests can be queued. One request is active at a time, if it’s something smaller, at times I may have the room to double-up, but not always.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">How do revisions work?</div>
-                    <div class="faq-a">One-Page Launch includes 1 light revision. Three-Page Site includes 2 light revisions. 1-Month Unlimited includes unlimited revisions during the active month.</div>
+                    <div class="faq-a">Solo Lander™ includes 1 light revision. Triple Custom™ includes 2 light revisions. 30-Day BNDR Unlimited™ includes unlimited revisions during the active month.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">What is a light revision?</div>
@@ -1121,7 +1118,7 @@ html[data-theme="light"] .fw-bold {
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">How does hosting work?</div>
-                    <div class="faq-a">Hosting is included with 1-Month Unlimited while active, upon request. Hosting is available separately for One-Page Launch and Three-Page Site at $60/mo per site.</div>
+                    <div class="faq-a">Hosting is included with 30-Day BNDR Unlimited™ while active, upon request. Hosting is available separately for Solo Lander™ and Triple Custom™ at $60/mo per site.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">What happens outside the selected package?</div>
@@ -1129,7 +1126,7 @@ html[data-theme="light"] .fw-bold {
                 </div>
                 <div class="faq-item">
                     <div class="faq-q">What’s the refund policy?</div>
-                    <div class="faq-a">1-Month Unlimited is month-to-month. Cancel anytime. It includes a 1-week 75% money-back guarantee. After the first week, the month remains active through day 30 and is non-refundable. All other work is non-refundable.</div>
+                    <div class="faq-a">30-Day BNDR Unlimited™ is month-to-month. Cancel anytime. It includes a 1-week 75% money-back guarantee. After the first week, the month remains active through day 30 and is non-refundable. All other work is non-refundable.</div>
                 </div>
             </div>
         </div>
@@ -1145,7 +1142,7 @@ html[data-theme="light"] .fw-bold {
 
 </main>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ═══════════════════════════════════════════════════════════════
    BNDR LLC — GhostEngine v6 — Ultra Smooth Architecture (GSAP + Lenis)
    ═══════════════════════════════════════════════════════════════ */
@@ -1167,7 +1164,7 @@ const SELECTED_WORK = [
     { url: 'https://bndrbots.github.io/raymarched/', label: 'RAYMARCHED' },
     { url: 'https://bndrbots.github.io/Sangredelsol/', label: 'SANGREDELSOL' },
     { url: 'https://bndrbots.github.io/verdict/', label: 'VERDICT' },
-    { url: 'https://bndrbots.github.io/TheFeedUpraded/', label: 'THE FEED UPGRADED' },
+    { url: 'https://bndrbots.github.io/TheFeedUpgraded/', label: 'THE FEED UPGRADED' },
     { url: 'https://bndrbots.github.io/auto_logistics/', label: 'AUTO LOGISTICS' },
     { url: 'https://bndrbots.github.io/distortion/', label: 'DISTORTION' },
     { url: 'https://bndrbots.github.io/Biltmore_Signal_Advisory/', label: 'BILTMORE SIGNAL ADVISORY' }
@@ -1786,14 +1783,4 @@ class GhostEngine {
             track.style.transform = `translateX(${offset}%)`;
         });
 
-        const scrollAngle = (sy * 0.05) + this.carouselOffset;
-        this.dom.carousel.style.transform = `rotateY(${scrollAngle}deg)`;
-
-        if (Math.abs(vel) > 8) this.playTick(Math.abs(vel));
-    }
-}
-
-window.onload = () => new GhostEngine();
-</script>
-</body>
-</html>
+        const scrollAngle = (sy
